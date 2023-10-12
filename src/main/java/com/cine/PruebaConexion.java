@@ -14,7 +14,7 @@ public class PruebaConexion {
             System.out.println("Conexión exitosa a la base de datos.");
 
             // Llamamos a un método para insertar una película
-            if (conexion.insertarPelicula(conn, "Barbie", "https://www.filmaffinity.com/es/film506593.html")) {
+            if (conexion.insertarPelicula(conn, "Oppenheimer", "https://www.filmaffinity.com/es/film294474.html")) {
                 System.out.println("Película insertada con éxito.");
             } else {
                 System.out.println("Error al insertar la película.");
