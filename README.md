@@ -13,19 +13,15 @@ Puedes encontrar el script para la creacion de tablas en la base de datos en el 
 
 ## Diagrama de Clases
 
-![Diagrama de Clases](link_al_diagrama_de_clases.png)
-
-[Agrega una descripción del diagrama de clases si es necesario]
+[Diagrama de Clases](clases.png)
 
 ## Diagrama de Secuencias
 
-![Diagrama de Secuencias](link_al_diagrama_de_secuencias.png)
-
-[Agrega una descripción del diagrama de secuencias si es necesario]
+[Diagrama de Secuencias](diagrama de secuencias.png)
 
 ## Autor
 
-- Emma Albarràn
+- Emma Albarrán
 - LinkedIn: https://www.linkedin.com/in/emma-albarran/
 
 
