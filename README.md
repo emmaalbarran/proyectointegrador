@@ -19,6 +19,10 @@ Puedes encontrar el script para la creacion de tablas en la base de datos en el 
 
 [Diagrama de Secuencias](diagramadesecuencias.png)
 
+## Instrucciones para la prueba de la aplicación
+
+El acceso a la base de datos encuentra limitado. Es necesario indicar la IP publica desde donde se hara la conexión para autorizarla en el Security Group del RDS. 
+
 ## Autor
 
 - Emma Albarrán
