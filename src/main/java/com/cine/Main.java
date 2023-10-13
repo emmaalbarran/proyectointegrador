@@ -45,6 +45,7 @@ public class Main {
                     break;
                 case 3:
                     System.out.println("Saliendo del programa.");
+                    scanner.close();
                     System.exit(0);
                 default:
                     System.out.println("Opción no válida.");

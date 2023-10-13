@@ -1,12 +1,5 @@
 package com.cine.model.domain;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
 public class PeliculaGenero {
     private Pelicula pelicula;
     private Genero genero;
