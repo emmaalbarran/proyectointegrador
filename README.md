@@ -17,7 +17,7 @@ Puedes encontrar el script para la creacion de tablas en la base de datos en el 
 
 ## Diagrama de Secuencias
 
-[Diagrama de Secuencias](diagrama de secuencias.png)
+[Diagrama de Secuencias](diagramadesecuencias.png)
 
 ## Autor
 
