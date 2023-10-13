@@ -13,9 +13,11 @@ import com.cine.model.domain.Pelicula;
 
 public class PeliculaDAOImpl implements PeliculaDAO {
 
+    // Clase con la logica para buscar las peliculas por el nombre 
     @Override
 public List<Pelicula> buscarPeliculasPorNombre(String nombre) {
     List<Pelicula> peliculas = new ArrayList<>();
+
     String query = "SELECT p.codigo, p.nombre AS nombre_pelicula, p.url, p.imagen, g.nombre AS nombre_genero " +
                     "FROM peliculas p " +
                     "INNER JOIN peliculas_generos pg ON p.codigo = pg.pelicula_codigo " +
@@ -29,7 +31,8 @@ public List<Pelicula> buscarPeliculasPorNombre(String nombre) {
         try (ResultSet resultSet = preparedStatement.executeQuery()) {
             while (resultSet.next()) {
                 int codigo = resultSet.getInt("codigo");
-                String nombrePelicula = resultSet.getString("nombre_pelicula");
+                // no puede quedar solo como "nombre" ya que hay 2 valores con el mismo nombre, por eso se esta usando nombre_pelicula y nombre_genero
+                String nombrePelicula = resultSet.getString("nombre_pelicula"); 
                 String url = resultSet.getString("url");
                 String genero = resultSet.getString("nombre_genero");
                 byte[] imagen = resultSet.getBytes("imagen");
@@ -48,13 +51,12 @@ public List<Pelicula> buscarPeliculasPorNombre(String nombre) {
         System.out.println("Nombre: " + pelicula.getNombre());
         System.out.println("URL: " + pelicula.getUrl());
         System.out.println("Genero: " + pelicula.getGenero());
-        // También puedes mostrar otros detalles como la imagen si es necesario
         System.out.println("------------------------------");
     }
     
     return peliculas;
 }
-
+    // Clase con la logica para buscar las peliculas por el genero
     @Override
     public List<Pelicula> buscarPeliculasPorGenero(int generoId) {
         List<Pelicula> peliculas = new ArrayList<>();
@@ -90,7 +92,6 @@ public List<Pelicula> buscarPeliculasPorNombre(String nombre) {
             System.out.println("Nombre: " + pelicula.getNombre());
             System.out.println("URL: " + pelicula.getUrl());
             System.out.println("Genero: " + pelicula.getGenero());
-            // También puedes mostrar otros detalles como la imagen si es necesario
             System.out.println("------------------------------");
         }
         

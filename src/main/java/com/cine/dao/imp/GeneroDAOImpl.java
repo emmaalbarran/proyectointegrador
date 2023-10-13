@@ -13,6 +13,7 @@ import com.cine.model.domain.Genero;
 
 public class GeneroDAOImpl implements GeneroDAO {
 
+    // Clase que obtiene el listado de los generos
     @Override
     public List<Genero> listarGeneros() {
         List<Genero> generos = new ArrayList<>();
